@@ -1,0 +1,145 @@
+4a98345e7277:python -u /app/run_sample.py
+                                                                                                                                                
+================
+== TensorFlow ==
+================
+
+NVIDIA Release 20.11-tf1 (build 17379723)
+TensorFlow Version 1.15.4
+
+Container image Copyright (c) 2020, NVIDIA CORPORATION.  All rights reserved.
+Copyright 2017-2020 The TensorFlow Authors.  All rights reserved.
+
+NVIDIA Deep Learning Profiler (dlprof) Copyright (c) 2020, NVIDIA CORPORATION.  All rights reserved.
+
+Various files include modifications (c) NVIDIA CORPORATION.  All rights reserved.
+NVIDIA modifications are covered by the license terms that apply to the underlying project or file.
+
+NOTE: MOFED driver for multi-node communication was not detected.
+      Multi-node communication performance may be reduced.
+
+NOTE: The SHMEM allocation limit is set to the default of 64MB.  This may be
+   insufficient for TensorFlow.  NVIDIA recommends the use of the following flags:
+   nvidia-docker run --shm-size=1g --ulimit memlock=-1 --ulimit stack=67108864 ...
+
+Using TensorFlow backend.
+2020-12-26 08:03:57.117563: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcudart.so.11.0
+WARNING:tensorflow:Deprecation warnings have been disabled. Set TF_ENABLE_DEPRECATION_WARNINGS=1 to re-enable them.
+loaded model.py
+##################################################
+##################################################
+keras_utils
+##################################################
+##################################################
+2020-12-26 08:03:58.518880: I tensorflow/core/platform/profile_utils/cpu_utils.cc:94] CPU Frequency: 2899885000 Hz
+2020-12-26 08:03:58.519164: I tensorflow/compiler/xla/service/service.cc:168] XLA service 0x755cd20 initialized for platform Host (this does not guarantee that XLA will be used). Devices:
+2020-12-26 08:03:58.519179: I tensorflow/compiler/xla/service/service.cc:176]   StreamExecutor device (0): Host, Default Version
+2020-12-26 08:03:58.528879: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcuda.so.1
+2020-12-26 08:03:58.705505: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:1082] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2020-12-26 08:03:58.708435: I tensorflow/compiler/xla/service/service.cc:168] XLA service 0x755ea60 initialized for platform CUDA (this does not guarantee that XLA will be used). Devices:
+2020-12-26 08:03:58.708459: I tensorflow/compiler/xla/service/service.cc:176]   StreamExecutor device (0): GeForce RTX 3080, Compute Capability 8.6
+2020-12-26 08:03:58.708868: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:1082] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2020-12-26 08:03:58.709199: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1665] Found device 0 with properties: 
+name: GeForce RTX 3080 major: 8 minor: 6 memoryClockRate(GHz): 1.71
+pciBusID: 0000:01:00.0
+2020-12-26 08:03:58.709237: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcudart.so.11.0
+2020-12-26 08:03:58.734531: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcublas.so.11
+2020-12-26 08:03:58.743939: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcufft.so.10
+2020-12-26 08:03:58.745409: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcurand.so.10
+2020-12-26 08:03:58.752390: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcusolver.so.11
+2020-12-26 08:03:58.754175: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcusparse.so.11
+2020-12-26 08:03:58.754355: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcudnn.so.8
+2020-12-26 08:03:58.754457: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:1082] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2020-12-26 08:03:58.754873: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:1082] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2020-12-26 08:03:58.755176: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1793] Adding visible gpu devices: 0
+2020-12-26 08:03:58.755484: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcudart.so.11.0
+2020-12-26 08:03:59.830846: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1206] Device interconnect StreamExecutor with strength 1 edge matrix:
+2020-12-26 08:03:59.830882: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1212]      0 
+2020-12-26 08:03:59.830888: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1225] 0:   N 
+2020-12-26 08:03:59.831352: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:1082] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2020-12-26 08:03:59.834209: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:1082] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2020-12-26 08:03:59.834733: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1351] Created TensorFlow device (/device:GPU:0 with 7585 MB memory) -> physical GPU (device: 0, name: GeForce RTX 3080, pci bus id: 0000:01:00.0, compute capability: 8.6)
+  0%|          | 0/244 [00:00<?, ?it/s]1 GPUs available
+loaded keras_utils.py
+Converting hypnograms
+100%|██████████| 244/244 [00:01<00:00, 149.38it/s]
+Loading Dataset
+Loading   : 100%|██████████| 244/244 [15:17<00:00,  3.76s/it]
+Loaded: ['54355.edf', '129862.edf', '154445.edf', '177362.edf', '203860.edf', '221862.edf', '262938.edf', '353062.edf', '489862.edf', '503162.edf', '592562.edf', '852062.edf', '1000162.edf', '1288940.edf', '1307660.edf', '1314762.edf', '1369148.edf', '1374950.edf', '1434261.edf', '1462162.edf', '1496244.edf', '1564761.edf', '1573130.edf', '1573256.edf', '1595554.edf', '1657449.edf', '1696062.edf', '1759160.edf', '1769062.edf', '1875851.edf', '1974558.edf', '1979154.edf', '1986162.edf', '2009962.edf', '2013662.edf', '2013962.edf', '2189562.edf', '2233262.edf', '2269356.edf', '2304562.edf', '2325161.edf', '2379262.edf', '2452056.edf', '2556758.edf', '2562959.edf', '2703462.edf', '2917862.edf', '2953538.edf', '3026656.edf', '3038860.edf', '3051962.edf', '3059262.edf', '3157556.edf', '3179362.edf', '3250162.edf', '3445159.edf', '3470762.edf', '3471962.edf', '3545542.edf', '3601259.edf', '3621162.edf', '3647759.edf', '3682162.edf', '3703762.edf', '3725554.edf', '3756360.edf', '3859261.edf', '3881662.edf', '3886362.edf', '3888162.edf', '3954051.edf', '4092062.edf', '4102162.edf', '4171162.edf', '4259861.edf', '4314260.edf', '4319356.edf', '4320349.edf', '4362250.edf', '4448859.edf', '4505862.edf', '4558462.edf', '4606054.edf', '4652062.edf', '4691261.edf', '4731651.edf', '4796962.edf', '4801162.edf', '4816454.edf', '4871347.edf', '4890562.edf', '4997440.edf', '5009862.edf', '5069759.edf', '5122044.edf', '5140562.edf', '5178558.edf', '5195861.edf', '5274053.edf', '5397362.edf', '5402762.edf', '5486631.edf', '5505960.edf', '5539461.edf', '5569962.edf', '5622538.edf', '5627060.edf', '5800045.edf', '5835261.edf', '5836162.edf', '5849646.edf', '5929862.edf', '6009646.edf', '6146560.edf', '6179348.edf', '6402461.edf', '6407946.edf', '6468260.edf', '6559452.edf', '6675462.edf', '6676062.edf', '6837962.edf', '6838462.edf', '6842362.edf', '6890955.edf', '6922454.edf', '6958361.edf', '7059062.edf', '7063262.edf', '7160553.edf', '7172562.edf', '7218338.edf', '7263662.edf', '7349562.edf', '7388553.edf', '7453260.edf', '7470162.edf', '7470362.edf', '7473731.edf', '7598561.edf', '7688258.edf', '7763061.edf', '7799961.edf', '7802458.edf', '7976962.edf', '8073061.edf', '8074356.edf', '8090835.edf', '8146855.edf', '8150662.edf', '8225160.edf', '8228453.edf', '8262962.edf', '8275560.edf', '8433162.edf', '8448942.edf', '8523641.edf', '8556556.edf', '8629156.edf', '8707562.edf', '8710362.edf', '8748262.edf', '8751955.edf', '8797353.edf', '8975062.edf', '8999360.edf', '9057456.edf', '9174532.edf', '9187458.edf', '9230148.edf', '9274061.edf', '9298858.edf', '9299858.edf', '9314049.edf', '9339762.edf', '9404558.edf', '9407260.edf', '9491562.edf', '9500358.edf', '9598258.edf', '9682731.edf', '9717361.edf', '9720460.edf', '9761055.edf', '9764062.edf', '9794161.edf', '9806249.edf', '9851856.edf', '9882259.edf', '9888960.edf', '9957461.edf', '9982962.edf', '10084362.edf', '10125160.edf', '10156661.edf', '10198961.edf', '10206758.edf', '10271561.edf', '10342359.edf', '10346560.edf', '10351855.edf', '10390053.edf', '10472955.edf', '10495161.edf', '10585762.edf', '10669040.edf', '10707355.edf', '10738562.edf', '10738855.edf', '10765059.edf', '11034961.edf', '11058444.edf', '11065062.edf', '11065962.edf', '11074852.edf', '11252961.edf', '11305150.edf', '11332052.edf', '11480662.edf', '11602361.edf', '11602461.edf', '11628438.edf', '11667161.edf', '11718844.edf', '11783861.edf', '11797348.edf', '11815447.edf', '11910362.edf', '11932439.edf', '11965650.edf', '11972945.edf', '12301839.edf', '12480444.edf', '12489736.edf', '12504747.edf', '12524639.edf', '13175150.edf', '13184233.edf', '13936236.edf', '30886257.edf', '31254157.edf', '33055857.edf', '34297357.edf', '70588733.edf']
+100%|██████████| 244/244 [00:10<00:00, 23.00it/s]
+Saving data at sleepdata.h5
+zscoring with axis None
+{'model': <function bi_lstm at 0x7f6e1b6ecc80>, 'layers': ['fc1'], 'seqlen': 6, 'epochs': 250, 'batch_size': 512, 'stop_after': 15, 'balanced': False}
+-----------------------------
+Starting fold 1: cnn3adam_filter_morel2_slim-edfx-sample at Sat Dec 26 08:20:24 2020
+WARNING:tensorflow:From /usr/local/lib/python3.6/dist-packages/keras/backend/tensorflow_backend.py:4070: The name tf.nn.max_pool is deprecated. Please use tf.nn.max_pool2d instead.
+
+starting normal generator
+starting normal generator
+starting normal generator
+starting normal generator
+2020-12-26 08:20:25.570277: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:1082] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2020-12-26 08:20:25.573625: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1665] Found device 0 with properties: 
+name: GeForce RTX 3080 major: 8 minor: 6 memoryClockRate(GHz): 1.71
+pciBusID: 0000:01:00.0
+2020-12-26 08:20:25.573692: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcudart.so.11.0
+2020-12-26 08:20:25.573709: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcublas.so.11
+2020-12-26 08:20:25.573746: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcufft.so.10
+2020-12-26 08:20:25.573760: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcurand.so.10
+2020-12-26 08:20:25.573775: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcusolver.so.11
+2020-12-26 08:20:25.573793: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcusparse.so.11
+2020-12-26 08:20:25.573810: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcudnn.so.8
+2020-12-26 08:20:25.573917: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:1082] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2020-12-26 08:20:25.574319: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:1082] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2020-12-26 08:20:25.574656: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1793] Adding visible gpu devices: 0
+2020-12-26 08:20:25.575353: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:1082] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2020-12-26 08:20:25.575702: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1665] Found device 0 with properties: 
+name: GeForce RTX 3080 major: 8 minor: 6 memoryClockRate(GHz): 1.71
+pciBusID: 0000:01:00.0
+2020-12-26 08:20:25.575722: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcudart.so.11.0
+2020-12-26 08:20:25.575734: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcublas.so.11
+2020-12-26 08:20:25.575744: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcufft.so.10
+2020-12-26 08:20:25.575769: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcurand.so.10
+2020-12-26 08:20:25.575781: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcusolver.so.11
+2020-12-26 08:20:25.575791: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcusparse.so.11
+2020-12-26 08:20:25.575803: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcudnn.so.8
+2020-12-26 08:20:25.575846: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:1082] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2020-12-26 08:20:25.576254: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:1082] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2020-12-26 08:20:25.576578: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1793] Adding visible gpu devices: 0
+2020-12-26 08:20:25.576609: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1206] Device interconnect StreamExecutor with strength 1 edge matrix:
+2020-12-26 08:20:25.576642: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1212]      0 
+2020-12-26 08:20:25.576646: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1225] 0:   N 
+2020-12-26 08:20:25.576718: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:1082] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2020-12-26 08:20:25.577056: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:1082] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2020-12-26 08:20:25.577373: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1351] Created TensorFlow device (/job:localhost/replica:0/task:0/device:GPU:0 with 7585 MB memory) -> physical GPU (device: 0, name: GeForce RTX 3080, pci bus id: 0000:01:00.0, compute capability: 8.6)
+WARNING:tensorflow:From /usr/local/lib/python3.6/dist-packages/keras/backend/tensorflow_backend.py:422: The name tf.global_variables is deprecated. Please use tf.compat.v1.global_variables instead.
+
+2020-12-26 08:20:26.332457: E tensorflow/core/grappler/optimizers/meta_optimizer.cc:569] layout failed: Invalid argument: Size of values 3 does not match size of permutation 4 @ fanin shape intraining/Adam/gradients/AddN_12-0-TransposeNHWCToNCHW-LayoutOptimizer
+2020-12-26 08:20:26.630189: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcublas.so.11
+2020-12-26 08:20:27.152838: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcudnn.so.8
+++++..++++.++....... 9.9 min
+ANN results: val acc/f1: 0.79044/0.79274, test acc/f1: 0.78726/0.78625
+Starting RNN model with input from layer fc1: [6, 512] at Sat Dec 26 08:30:42 2020
+starting normal generator
+starting normal generator
+starting normal generator
+starting normal generator
++++++++++++.++.++...++.+.+.........+................
+No improvement after epoch 51
+ 5.5 min
+Traceback (most recent call last):
+  File "/app/run_sample.py", line 58, in <module>
+    plot=True, stop_after=15, balanced=False, cropsize=2800)
+  File "/app/keras_utils.py", line 839, in cv
+    tools.save_results(save_dict=save_dict)
+  File "/app/tools.py", line 405, in save_results
+    np.set_printoptions(precision=2,threshold=np.nan)
+  File "/usr/local/lib/python3.6/dist-packages/numpy/core/arrayprint.py", line 247, in set_printoptions
+    floatmode, legacy)
+  File "/usr/local/lib/python3.6/dist-packages/numpy/core/arrayprint.py", line 93, in _make_options_dict
+    raise ValueError("threshold must be numeric and non-NAN, try "
+ValueError: threshold must be numeric and non-NAN, try sys.maxsize for untruncated representation
+fold 0: val acc/f1: 0.82738/0.82887, test acc/f1: 0.83218/0.82833
+
+Process finished with exit code 1
+

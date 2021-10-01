@@ -1,6 +1,7 @@
-# AutoSleepScorerDev
-Please find the package here https://github.com/skjerns/AutoSleepScorer
+# ProjectAutoPSG
+Original package from https://github.com/skjerns/AutoSleepScorer with some modification for fitting KCMH dataset
 
+---------------------------------------------------------------------------------
 
 This repository contains all the files for training and preprocessing. It's more a file dump for me than a usable repository. Most files are absolutely undocumented.
 
